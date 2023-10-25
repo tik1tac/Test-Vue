@@ -1,15 +1,11 @@
 <template>
-    <div>
-
-    </div>
+  <button type="button" class="btn btn-primary">{{ title }}</button>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  props: ["title"],
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
