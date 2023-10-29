@@ -1,6 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import "bootstrap"
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import router from "./route";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Vuetify from "vuetify";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(Vuetify).use(router).mount("#app");
